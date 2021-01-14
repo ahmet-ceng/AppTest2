@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/actionBarLogin"
+                layout="@layout/action_bar"
+                android:background="#FF9800"></include>
+
+            <ImageView
+                android:id="@+id/sign_in"
+                android:layout_width="147dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                app:srcCompat="@mipmap/ic_sign_in" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sign_in"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEmail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="@string/Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPasswordLogin"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/ButtonColour1"
+                android:shadowColor="#E6D0D0"
+                android:text="@string/Sign_in"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnForgetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSignIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#FF9800"
+                android:text="@string/forgetPassword" />
+
+
+            />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

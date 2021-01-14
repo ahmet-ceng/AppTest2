@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:flow_horizontalAlign="center"
+    tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/New_User_Icon"
+                            android:layout_width="147dp"
+                            android:layout_height="140dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="60dp"
+                            app:srcCompat="@mipmap/ic_new_user" />
+
+                        <TextView
+                            android:id="@+id/txt_Create_Account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/New_User_Icon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="40dp"
+                            android:text="@string/Create_an_Account" />
+
+                        <EditText
+                            android:id="@+id/txtFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
+                            android:ems="10"
+                            android:hint="@string/First_Name"
+                            android:inputType="textPersonName"
+                            android:textSize="14sp"
+                            android:layout_below="@id/txt_Create_Account"/>
+
+                        <EditText
+                            android:id="@+id/txtLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:ems="10"
+                            android:hint="@string/Last_Name"
+                            android:inputType="textPersonName"
+                            android:textSize="14sp"
+                            android:layout_below="@id/txtFirstName"/>
+
+                        <EditText
+                            android:id="@+id/txtRegEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:ems="10"
+                            android:hint="@string/Email"
+                            android:inputType="textEmailAddress"
+                            android:textSize="14sp"
+                            android:layout_below="@id/txtLastName"/>
+
+                        <EditText
+                            android:id="@+id/txtPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:ems="10"
+                            android:hint="@string/Tel_no"
+                            android:inputType="phone"
+                            android:textSize="14sp"
+                            android:layout_below="@id/txtRegEmail"/>
+
+                        <EditText
+                            android:id="@+id/txtRegPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:ems="10"
+                            android:hint="@string/Password"
+                            android:inputType="textPassword"
+                            android:textSize="14sp"
+                            android:layout_below="@id/txtPhone"/>
+
+                        <Button
+                            android:id="@+id/btnSignUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtRegPassword"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/ButtonColour1"
+                            android:text="@string/Sign_up"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/Terms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btnSignUp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="30dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/Terms_of_service"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/AlreadyHaveAccountButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Terms"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@android:color/holo_orange_dark"
+                            android:text="@string/Already_haveaccount"
+                            android:textColor="@android:color/black" />
+                </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>

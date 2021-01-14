@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileOwner">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/New_User_Icon"
+                android:layout_width="147dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@android:drawable/star_big_on" />
+
+            <EditText
+                android:id="@+id/txtOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/New_User_Icon"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="@string/nametxt"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtOwnerTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtOwnerName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="@string/telehonetxt"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtOwnerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtOwnerTelephone"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="@string/addresstxt"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnOwnerUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtOwnerAddress"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/ButtonColour1"
+                android:text="@string/update_button"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

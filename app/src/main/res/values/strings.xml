@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">AppTest2</string>
+    <string name="Create_an_Account">Create an Account</string>
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Email">E-mail</string>
+    <string name="Password">Password</string>
+    <string name="Tel_no">Telephone</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="forgetPassword">Forget my Password</string>
+    //customer or saloon
+    <string name="customer">I am a customer</string>
+    <string name="owner">I own a saloon</string>
+    <string name="customer1">Continue as customer</string>
+    <string name="owner1">Continue as owner</string>
+
+    //owner menu
+    <string name="welcome">Welcome</string>
+    <string name="mySaloon">My Saloon</string>
+    <string name="myAppointments">My Appointments</string>
+    <string name="myPrices">My Prices</string>
+
+    //owner my saloon
+    <string name="nametxt">Name:</string>
+    <string name="telehonetxt">Telephone:</string>
+    <string name="addresstxt">Address:</string>
+    <string name="ratingtxt">Rating:</string>
+    <string name="commentstxt">Comments:</string>
+    <string name="editprofile">Edit Profile</string>
+
+    //owner appointments
+    <string name="btntoday">Today</string>
+    <string name="btntomorrow">tomorrow</string>
+    <string name="a7">07:00</string>
+    <string name="a8">08:00</string>
+    <string name="a9">09:00</string>
+    <string name="a10">10:00</string>
+    <string name="a11">11:00</string>
+    <string name="a12">12:00</string>
+    <string name="a13">13:00</string>
+    <string name="a14">14:00</string>
+    <string name="a15">15:00</string>
+    <string name="a16">16:00</string>
+    <string name="a17">17:00</string>
+    <string name="a18">18:00</string>
+    <string name="a19">19:00</string>
+
+    //owner prices
+    <string name="Haircut">Haircut:</string>
+    <string name="Beard_Shave">Beard Shave:</string>
+    <string name="Wax">Wax:</string>
+    <string name="Hair_washing">Hair Washing:</string>
+    <string name="price_hair">40 tl</string>
+    <string name="update_button">Update</string>
+
+    //customer menu
+    <string name="myplaces">My Places</string>
+    <string name="myappointment">My Appointments</string>
+    <string name="newappointment">New Appointments</string>
+    <string name="placesnearme">Places Near Me</string>
+
+
+    <string name="Already_haveaccount">Already have an account?</string>
+    <string name="Terms_of_service">By signing up, you agree with the Terms of Service and Privacy Policy</string>
+
+
+</resources>
